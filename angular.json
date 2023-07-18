@@ -25,12 +25,26 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/leaflet/dist/images/",
+                "output": "./assets"
+              }
             ],
             "styles": [
+              "./node_modules/font-awesome/css/font-awesome.css", 
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/leaflet/dist/leaflet.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js", 
+              "src/assets/static/js/layout.js",
+              "src/assets/static/js/main.js",
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js",  
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -103,5 +117,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d920e7d2-583e-4e1c-9e81-4b76962a07da"
   }
 }

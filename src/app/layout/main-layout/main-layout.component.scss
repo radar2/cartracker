@@ -1,0 +1,99 @@
+#navbarNavDropdown.collapse.navbar-collapse {
+    justify-content: flex-end;
+    margin: 0px !important;
+    transition: all 0.3s;
+}
+nav {
+    height: 75px !important;
+    z-index: 9999;
+}
+
+nav .nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.header-box {
+    width: 260px;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown .dropdown-item {
+    font-size: 13px;
+}
+
+.content {
+    padding-top: 75px;
+    position: relative;
+    width:100%
+
+}
+
+.sidebar-container {
+    position: sticky;
+    top: 75px;
+    height: calc(100vh - 75px);
+    width: 275px;
+    border: 1px solid #000;
+}
+
+.list-group-item {
+    background: none;
+    text-transform: uppercase;
+}
+
+// .sidebar-container {
+//     position: sticky;
+//     position: -webkit-sticky;
+//     top: 50px;
+//     width: 200px;
+//     height: calc(100vh - 40px);
+//     overflow-y: auto;
+//     transition: all 0.3s;
+//     margin-left: -200px;
+// }
+
+.sidebar-expanded {
+    margin-left: 0px;
+}
+
+// li.list-group-item {
+//      cursor: pointer;
+//      background: none !important;
+//      color: #679ad7;
+//      font-size: 13px;
+//      &:hover {
+//         color: #fff;
+//         background:#679ad7 !important;
+//      }
+// }
+
+// .sidebar-container li.active{
+//     color: #fff;
+//     background:#679ad7 !important;
+//     border: none !important;
+//     border-radius: none
+// }
+
+.content-body {
+    width: calc(100% - 275px)
+}
+
+
+@media (max-width: 767.98px) {
+    nav {
+        //height: 100vh !important;
+
+    }
+    #navbarNavDropdown.collapse.navbar-collapse {
+        //height: 100vh !important;
+        padding: 10px;
+        background-color: #000 !important;
+    }
+    .user-icon::after {
+        content: "Mon compte";
+        color: #fff;
+    }
+}

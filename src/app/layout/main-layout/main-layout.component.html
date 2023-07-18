@@ -1,0 +1,98 @@
+<!-- <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light border-bottom">
+  <div class="header-box d-flex justify-content-between align-items-center">
+    <h2 class="header-3"><span class="bg-dark text-white px-2 rounded py-1">OCoin</span> </h2>
+    <span id="sidebar-toggler" class="fa fa-bars fa-fw" style="cursor: pointer;"></span>
+  </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <a href="" class="nav-link">TABLEAU DE BORD</a>
+        <a href="" class="nav-link">HOTELS</a>
+        <a href="" class="nav-link">RESERVATIONS</a>
+        <a href="" class="nav-link">PAIEMENTS</a>
+        <div class="dropdown" >
+          <a class="dropdown-toggle text-white px-1 user-icon" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="fa fa-user fa-fw rounded bg-dark  py-1"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">
+                <span class="fa fa-power-off fa-fw"></span>
+                Déconnexion</a>
+
+          </div>
+        </div>
+
+    </div>
+  </nav>
+
+  <div class="content ml-0 d-flex">
+  
+    <div class="sidebar-container p-0 sidebar-expanded bg-dark border">
+        <ul class="list-group">
+            <li [routerLink]="['/dashboard']"  class="list-group-item active py-1   ">
+               <span class="fa fa-home fa-fw"></span> Tableau de board
+            </li>
+            <li [routerLink]="['/booking/hotels']" class="list-group-item  py-1  ">
+                <span class="fa fa-hotel fa-fw"></span> Hotels</li>
+            <li class="list-group-item list-group-item-action list-group-item-flush py-1">
+                <span class="fa fa-money fa-fw"></span>  Reservations</li>
+        </ul>
+    </div>
+
+    <div class="content-body m-0">
+        <router-outlet></router-outlet>
+    </div>
+  </div> -->
+
+
+
+  <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="header-box d-flex justify-content-between align-items-center">
+      <h2 class="header-3"><span class="bg-dark text-white px-2 rounded py-1">CT</span> <span>Car Tracker</span> </h2>
+      <span id="sidebar-toggler" class="fa fa-bars fa-fw" style="cursor: pointer;"></span>
+    </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  
+          <!-- <a href="" class="nav-link">TABLEAU DE BORD</a>
+          <a href="" class="nav-link">HOTELS</a>
+          <a href="" class="nav-link">RESERVATIONS</a>
+          <a href="" class="nav-link">PAIEMENTS</a> -->
+          <div class="dropdown" >
+            <a class="dropdown-toggle text-white px-1 user-icon" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="fa fa-user fa-fw rounded bg-dark  py-1"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right p-0" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">
+                  <span class="fa fa-power-off fa-fw"></span>
+                  Déconnexion</a>
+  
+            </div>
+          </div>
+  
+      </div>
+    </nav>
+  
+    <div class="content ml-0 d-flex">
+      <!-- SideBar -->
+      <div class="sidebar-container m-0 sidebar-expanded bg-dark border">
+          <ul class="list-group p-0">
+            <li class="list-group-item text-white">Dashboard</li>
+            <li class="list-group-item text-white">Offending car</li>
+            <li class="list-group-item text-white" [routerLink]="['/tracking/live']">Live tracking</li>
+            <li class="list-group-item text-white">Raspberry pi</li>
+          </ul>
+      </div>
+      <!-- SideBar -->
+
+      <!-- Body -->
+      <div class="content-body m-0">
+          <router-outlet></router-outlet>
+      </div>
+      <!-- Body -->
+    </div>
+  
